@@ -8,7 +8,7 @@ int main()
 {
 	const int MAX_QUESTIONS = 20;
 	const int SKIP_CODE = 11;
-	const int EXIT_CODE = 12;
+	const int EXIT_CODE = 12; 
 
 	std::vector<int> randNumbers;
 	randNumbers.reserve(MAX_QUESTIONS + 2);

@@ -18,7 +18,7 @@ int translateInputToIndex(char inputTranslate)
 	case '4': case 'd': case 'D':
 		return 3;
 	default:
-		return -1;
+		return -1; 
 	}
 }
 bool checkAnswer(int userAnswerInput, QuestionStruct currentQuestion)
