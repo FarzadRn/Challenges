@@ -1,0 +1,3 @@
+Batman:3.59$:500
+NoobWars:0.40$:10
+SuperMan:2.0$:2

@@ -8,7 +8,7 @@ int main()
 {
 	const int MAX_QUESTIONS = 20;
 	const int SKIP_CODE = 11;
-	const int EXIT_CODE = 12; 
+	const int EXIT_CODE = 12;
 
 	std::vector<int> randNumbers;
 	randNumbers.reserve(MAX_QUESTIONS + 2);
@@ -30,9 +30,6 @@ int main()
 		std::cout << "Guess the number or enter: " << SKIP_CODE << " to skip | " << EXIT_CODE << " to giveup ||| " << "number of guesses: " << guesses << std::endl;
 		std::cin >> input;
 
-		if (input == EXIT_CODE) break;
-
-		if (index >= randNumbers.size())  index = 0;
 
 		if (input == SKIP_CODE)
 		{
@@ -40,16 +37,29 @@ int main()
 			skips++;
 			continue;
 		}
+		else if (input == EXIT_CODE)
+		{
+			break;
+		}
+
+		if (index >= randNumbers.size())
+		{
+			index = 0;
+		}
 
 		guesses++;
-
-		if (input == randNumbers[index])
+		const int currentNumber = randNumbers[index];
+		if (input == currentNumber)
 		{
+			std::cout << "correct!" << std::endl;
 			correct++;
 			randNumbers.erase(randNumbers.begin() + index);
 			index++;
 		}
-		else { index++; }
+		else 
+		{ 
+			std::cout << "incorrect!" << std::endl;
+		}
 	}
 
 	std::cout << "out of " << guesses << "s guess you made " << correct << " correct guesses and you skipped " << skips << " times." << std::endl;
