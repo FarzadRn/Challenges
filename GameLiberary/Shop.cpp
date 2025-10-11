@@ -2,8 +2,6 @@
 #include <vector>
 #include <string>
 #include <fstream>
-//in case I got with vector of arrays
-#include <array>
 
 struct game
 {
@@ -55,6 +53,7 @@ int main()
 	//first create games vector
 	std::vector<game> games;
 
+	//Take data from Liberary file-------------------------------------------
 	std::ifstream inLib("Liberary.txt");
 	if (inLib.is_open())
 	{
@@ -89,17 +88,14 @@ int main()
 		}
 		inLib.close();
 	}
+	//Data in end-----------------------------------------------------------
 
-
-	for (int i = 0; i != 9; i++)
-	{
-	//	games.push_back(g);
-	}
 	printLiberary(games);
+
+
+	//game start -----------------------------------------------------------
 	std::cout << "HEY GAMER!! welcome to my humble game shop!" << '\n';
 	std::cout << "You can store your games here, and I will sell them for you :)" << '\n';
-
-
 	while (true)
 	{
 		std::string input = "0";
@@ -169,6 +165,10 @@ int main()
 			break;
 		}
 	}
+	//game end -----------------------------------------------------------
+
+
+	//save data ----------------------------------------------------------
 	std::ofstream outLib("Liberary.txt");
 	if (outLib.is_open())
 	{
@@ -179,6 +179,7 @@ int main()
 		}
 		outLib.close();
 	}
+	//save done ----------------------------------------------------------
 }
 
 void printLiberary(std::vector<game>& liberary)
