@@ -9,6 +9,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QuizGame", "QuizGame\QuizGa
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameLiberary", "GameLiberary\GameLiberary.vcxproj", "{90878E26-CC30-46D1-AAD4-D420893F9FE2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "testing Cache speed difference", "testing Cache speed difference\testing Cache speed difference.vcxproj", "{8F973279-9967-4E4B-B1D0-80CC8E634648}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChatGPT_GameLiberary", "ChatGPT_GameLiberary\ChatGPT_GameLiberary.vcxproj", "{F1457E98-9325-4816-B458-D7AD6623AA6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -41,6 +45,22 @@ Global
 		{90878E26-CC30-46D1-AAD4-D420893F9FE2}.Release|x64.Build.0 = Release|x64
 		{90878E26-CC30-46D1-AAD4-D420893F9FE2}.Release|x86.ActiveCfg = Release|Win32
 		{90878E26-CC30-46D1-AAD4-D420893F9FE2}.Release|x86.Build.0 = Release|Win32
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Debug|x64.ActiveCfg = Debug|x64
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Debug|x64.Build.0 = Debug|x64
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Debug|x86.ActiveCfg = Debug|Win32
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Debug|x86.Build.0 = Debug|Win32
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Release|x64.ActiveCfg = Release|x64
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Release|x64.Build.0 = Release|x64
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Release|x86.ActiveCfg = Release|Win32
+		{8F973279-9967-4E4B-B1D0-80CC8E634648}.Release|x86.Build.0 = Release|Win32
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Debug|x64.ActiveCfg = Debug|x64
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Debug|x64.Build.0 = Debug|x64
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Debug|x86.ActiveCfg = Debug|Win32
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Debug|x86.Build.0 = Debug|Win32
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Release|x64.ActiveCfg = Release|x64
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Release|x64.Build.0 = Release|x64
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Release|x86.ActiveCfg = Release|Win32
+		{F1457E98-9325-4816-B458-D7AD6623AA6C}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

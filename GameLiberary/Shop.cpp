@@ -2,35 +2,16 @@
 #include <vector>
 #include <string>
 #include <fstream>
+#include <stdalign.h>
 
 struct game
 {
-	std::string Name = "EMPTYNAME";
+	alignas(64) std::string Name = "EMPTYNAME";
 	std::string Price = "EMPTYPRICE";
 	std::string Quantity = "EMPTYQuantity";
 };
-
-//inventory//add game to inventory
-//user enters name //no dupe// price quantity 
-//display all after input
-//select game to see totall price
-//read from a file/write to a file why not
-
-//---1. make the inventory 
-//---2. let player add item
-//---3. add function to detect dupe
-//---4. print all games
-//---5. add function to detect total price of each chosen game
-//---6. write to file the games added
-//---7. read from file
-//---8. check file for available data to then feed the vectors
-//---9. loop back done.
-//10. polish
-
-
 bool isDupe(std::vector<game>& inputedGame, std::string inputedName)
 {
-	//for (std::vector<game>::iterator iterator = inputedGame.begin(); iterator != inputedGame.end(); iterator++)
 	for (int i = 0; i != inputedGame.size(); i++)
 	{
 		if (inputedName == inputedGame[i].Name)
@@ -52,7 +33,6 @@ int main()
 {
 	//first create games vector
 	std::vector<game> games;
-
 	//Take data from Liberary file-------------------------------------------
 	std::ifstream inLib("Liberary.txt");
 	if (inLib.is_open())
